@@ -17,9 +17,8 @@ void print_python_list_info(PyObject *p)
 		printf("[ERROR} Invalid Python object. Not a list.\n");
 		return;
 	}
-	printf("[*] Python list info\n");
-	printf("[*] Size of the list: %zd\n", sizes);
-	printf("[*] Allocated memory: %zd\n", lists->allocated);
+	printf("[*] Size of the Python List = %zd\n", sizes);
+	printf("[*] Allocated = %zd\n", lists->allocated);
 	for (ink = 0; ink < sizes; ink++)
 	{
 		element = PyList_GetItem(p, ink);
