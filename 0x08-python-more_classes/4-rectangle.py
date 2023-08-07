@@ -60,7 +60,7 @@ class Rectangle:
         rectangle_str = ""
         for ink in range(self.__height):
             for clm in range(self.__width):
-                rectangle_str += "#" 
+                rectangle_str += "#"
             if self.__width != 0 and ink < (self.__height - 1):
                 rectangle_str += "\n"
         return rectangle_str
