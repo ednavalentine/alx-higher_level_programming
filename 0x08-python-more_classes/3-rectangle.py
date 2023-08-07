@@ -65,7 +65,3 @@ class Rectangle:
             if ink < self.__height - 1:
                 rectangle_str += "\n"
         return rectangle_str
-
-    def __repr(self):
-        """Check for string representation"""
-        return f"Rectangle({self.__width}, {self.__height})"
