@@ -55,7 +55,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height) \
             if self.__width != 0 and self.__height != 0 else 0
 
-    def __str__(self):
+    def rectangle_drawn(self):
         """Checking if the width and height values are strings"""
         if self.__width == 0 or self.__height == 0:
             return ""
@@ -65,3 +65,6 @@ class Rectangle:
             if ink < self.__height - 1:
                 rectangle_str += "\n"
         return rectangle_str
+    def __str__(self):
+        """returns rectangle_drawn"""
+        return self.rectangle_drawn()
