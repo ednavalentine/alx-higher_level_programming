@@ -57,15 +57,18 @@ class Rectangle:
 
     def rectangle_drawn(self):
         """Checking if the width and height values are strings"""
-        if self.__width == 0 or self.__height == 0:
-            return ""
         rectangle_str = ""
         for ink in range(self.__height):
-            rectangle_str += "#" * self.__width
-            if ink < self.__height - 1:
+            for clm in range(self.__width):
+                rectangle_str += "#" 
+            if self.__width != 0 and ink < (self.__height - 1):
                 rectangle_str += "\n"
         return rectangle_str
 
     def __str__(self):
         """returns rectangle_drawn"""
         return self.rectangle_drawn()
+
+    def __repr__(self):
+        """Check for string representation"""
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
