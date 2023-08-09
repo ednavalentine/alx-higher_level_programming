@@ -1,0 +1,31 @@
+# Test cases for add_integer function
+
+
+#Examples:
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(5, 10)
+15
+>>> add_integer(-7, 3)
+-4
+>>> add_integer(0, 0)
+0
+>>> add_integer(5.5, 2.5)
+8.0
+>>> add_integer(0.0, 0.0)
+0.0
+>>> add_integer(5, 2.5)
+7.5
+>>> add_integer(5.5, 2)
+7.5
+>>> add_integer("not_an_integer", 5)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer or a float
+>>> add_integer(10, "not_an_integer")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer or a float
+>>> add_integer("not_an_integer", "also_not_an_integer")
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer or a float
